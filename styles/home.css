@@ -1,0 +1,64 @@
+:root{
+    --fontWhite: #ffffff;
+    --borderGrey: #c5c1c1;
+    --footerBackground: #252729;
+    --xs: 600px;
+    --s: 768px;
+    --l: 992px;
+    --xl: 1200px;
+    --spinFooter: 3deg;
+    --nameFont: 'Roboto Condensed', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+.home{
+/*     width: var(--s);
+    max-width: var(--s); */
+    overflow: hidden;
+}
+
+
+
+.home__background--image{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.home__footer{
+    width: 97%;
+    height: 35px;
+    background-color: var(--footerBackground);
+    position: absolute;
+    opacity: 0.4;
+    bottom: 0px;
+    color: var(--fontWhite);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.symbol{
+    font-family: var(--nameFont);
+    font-weight: 700;
+    color: inherit;
+}
+
+.redes__sociales{
+    color: inherit;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+@media (max-width: 600px) {
+    .home__footer{
+        flex-direction: column;
+    }
+}
+
+
+
+/*Patron de estilos siguiendo el patron mobile first */
