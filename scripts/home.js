@@ -1,29 +1,17 @@
 console.log('Hola desde consola');
-function carrousel() {
-    const colors = ["home-background", "home-background-2", "home-background-3", "home-background-4"];
-    const background = document.querySelector(".home__background--image");
-    let index = -1;
-    const interval = setInterval(()=>{
-        index += 1;
-        if ((index >= 0) && (index <= 3)){
-            const url = `./assets/${colors[index]}`
-            background.style.backgroundImage = url;
-            console.log(url);
-        }
-        else {
-            index = -1;
-        }
 
-    }, 2000);
-    interval();
-}
-document.addEventListener("DOMContentLoaded", ()=>{
+
+
+function carrousel() {
     const images = ["home-background.jpg", "home-background-2.jpeg", "home-background-3.jpeg", "home-background-4.jpeg"];
     const background = document.querySelector(".home__background--image");
     let index = -1;
-    setInterval(()=>{
+    let counter = 0;
+    const interval = setInterval(()=>{
         index += 1;
         if ((index >= 0) && (index <= 3)){
+            counter += 1;
+            console.log('counter: ', counter);
             const url = `./assets/${images[index]}`
             background.src = url;
             console.log(url);
@@ -31,6 +19,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
         else {
             index = -1;
         }
+        if (counter === 13) {
+            clearInterval(interval);
+        }
 
     }, 2000);
-});
+
+
+}
+document.addEventListener("DOMContentLoaded", carrousel);
