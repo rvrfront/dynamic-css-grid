@@ -20,6 +20,35 @@
 
 }
 
+.navbar{
+    width: 100%;
+    height: 1.5rem;
+    border-bottom: 3px solid var(--footerBackground);
+    font-family: var(--nameFont);
+}
+
+.navbar__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 15px;
+}
+
+.navbar__list__item{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--borderGrey);
+}
+
+.navbar__list__item:hover{
+    transform: scale(1.1);
+    color: teal;
+    cursor: pointer;
+}
 
 
 .home__background--image{
@@ -54,6 +83,11 @@
     color: inherit;
     text-decoration: none;
     padding-right: 30px;
+}
+
+.redes__sociales__icon:hover{
+    font-size: 25px;
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {
