@@ -11,13 +11,13 @@ function factorial(){
 }
 
 function carrousel() {
-    const images = ["home-background.jpg", "home-background-2.jpeg", "home-background-3.jpeg", "home-background-4.jpeg"];
+    const images = ["back1.jpg", "back2.jpg", "back3.jpg", "back4.jpg", "back5.jpg"];
     const background = document.querySelector(".home__background--image");
     let index = -1;
     let counter = 0;
     const interval = setInterval(()=>{
         index += 1;
-        if ((index >= 0) && (index <= 3)){
+        if ((index >= 0) && (index <= 4)){
             counter += 1;
             console.log('counter: ', counter);
             const url = `./assets/${images[index]}`
@@ -27,7 +27,7 @@ function carrousel() {
         else {
             index = -1;
         }
-        if (counter === 13) {
+        if (counter === 14) {
             clearInterval(interval);
         }
 

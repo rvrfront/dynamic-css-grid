@@ -46,7 +46,7 @@
 }
 
 .navbar__list__item--underline{
-    border-bottom: 3px solid var(--borderGrey);
+    border-top: 3px solid var(--borderGrey);
 }
 
 .navbar__list__item:hover{
@@ -124,7 +124,7 @@
 .redes__sociales{
     color: inherit;
     text-decoration: none;
-    padding-right: 30px;
+    padding-right: 0px;
 }
 
 .redes__sociales__icon:hover{

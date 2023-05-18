@@ -46,7 +46,7 @@
 }
 
 .navbar__list__item--underline{
-    border-bottom: 3px solid var(--borderGrey);
+    border-top: 3px solid var(--borderGrey);
 }
 
 .navbar__list__item:hover{
@@ -89,6 +89,7 @@
 }
 
 .symbol{
+    right: 15px;
     font-family: var(--nameFont);
     font-weight: 700;
     color: inherit;
@@ -97,7 +98,7 @@
 .redes__sociales{
     color: inherit;
     text-decoration: none;
-    padding-right: 30px;
+    padding-right: 0;
 }
 
 .redes__sociales__icon:hover{
@@ -118,7 +119,35 @@
         justify-content: space-between;
         align-items: center;
     }
+
 }
+
+@media(max-width: 800px){
+    .home__slope__line{
+        display: none;
+    }
+    .navbar{
+        border-bottom: 3px solid var(--footerBackground);
+    }
+}
+ @media(min-width: 950px){
+/*     width: 110%;
+    height: 50px;
+    position: absolute;
+    top: 29px;
+    transform: rotate(3deg);
+    background-color: white;
+    border-bottom: 3px solid var(--footerBackground); */
+    .home__slope__line{
+        transform: rotate(2deg);
+    }
+ }
+
+ @media(min-width: 1500px){
+     .home__slope__line{
+         transform: rotate(1deg);
+     }
+ }
 
 
 
