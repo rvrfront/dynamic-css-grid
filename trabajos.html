@@ -5,40 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Option 1: Include in HTML -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
  <link rel="stylesheet" href="./styles/trabajos.css">   
  <title>Practica modulo 2</title>
 </head>
 <body class="home">
     <nav class="navbar">
         <ul class="navbar__list">
-            <li><a class="navbar__list__item" href="./trabajos.html">Trabajos</a></li>
+            <li><a class="navbar__list__item" href="./home.html">Home</a></li>
+            <li><a class="navbar__list__item navbar__list__item--underline" href="./trabajos.html">Trabajos</a></li>
+            <li><a class="navbar__list__item" href="./mosaico.html">Mosaico</a></li>
             <li><a class="navbar__list__item" href="./contacto.html">Contacto</a></li>
         </ul>
-    </nav>     
+    </nav>
     <div class="home__slope__line">
-        <div class="home__slope__line--deg">
-            <a class="reset__home" href="./home.html"><i class="bi bi-house navbar__home__icon"></i></a>
-        </div>
-
     </div>
     <img class="home__background--image" src="./assets/home-background.jpg" alt="background-image">
 
-
-    <section class="container__portfolio">
-<!--         <article class="container__portfolio__item-1"></article>
-        <article class="container__portfolio__item-2"></article>
-        <article class="container__portfolio__item-3"></article>
-        <article class="container__portfolio__item-4"></article>
-        <article class="container__portfolio__item-5"></article>
-        <article class="container__portfolio__item-6"></article>
-        <article class="container__portfolio__item-7"></article>
-        <article class="container__portfolio__item-8"></article>
-        <article class="container__portfolio__item-9"></article> -->
+    <section class="portfolio">
+        <article class="portfolio__item--1 portfolio__item--anim">
+            <img class="responsive__img" src="./assets/pic1.png" alt="pic1.png">
+        </article>
+        <article class="portfolio__item--2 portfolio__item--anim">
+            <img class="responsive__img" src="./assets/pic2.png" alt="pic2.png">
+        </article>
+        <article class="portfolio__item--3 portfolio__item--anim">
+            <img class="responsive__img" src="./assets/pic3.png" alt="pic3.png">
+        </article>
+        <article class="portfolio__item--4 portfolio__item--anim">
+            <img class="responsive__img" src="./assets/pic4.png" alt="pic4.png">
+        </article>
+        <article class="portfolio__item--5 portfolio__item--anim">
+            <img class="responsive__img" src="./assets/pic5.png" alt="pic5.png">
+        </article>
+        <article class="portfolio__item--6 portfolio__item--anim">
+            <img class="responsive__img" src="./assets/pic6.png" alt="pic6.png">
+        </article>
+        <article class="portfolio__item--7 portfolio__item--anim">
+            <img class="responsive__img" src="./assets/pic7.png" alt="pic7.png">
+        </article>
+        <article class="portfolio__item--8 portfolio__item--anim">
+            <img class="responsive__img" src="./assets/pic8.png" alt="pic8.png">
+        </article>
     </section>
-    <div>
-        <button class="regen__grid" type="button" onclick="genRandomGrid()">regen grid</button>
-    </div>
+
+
     <footer class="home__footer">
         <div>
             <span class="symbol">&copy;</span>
@@ -48,6 +59,5 @@
             <a class="redes__sociales" href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin redes__sociales__icon"></i></a>
         </div>
     </footer>
-    <script src="scripts/trabajos.js"></script>
 </body>
 </html>

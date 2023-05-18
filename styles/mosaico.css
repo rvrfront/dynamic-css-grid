@@ -8,6 +8,16 @@
     --xl: 1200px;
     --spinFooter: 2deg;
     --nameFont: 'Roboto Condensed', sans-serif;
+    --color1: #fa0404;
+    --color2: #ddad0d;
+    --color3: #7df110;
+    --color4: #20ebeb;
+    --color5: #1389e9;
+    --color6: #9920df;
+    --color7: #e475a9;
+    --color8: #8a7f7f;
+    --color9: #1961e7;
+    
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
@@ -23,9 +33,14 @@
 .navbar{
     width: 100%;
     height: 1.5rem;
-    padding-bottom: 12px;
+    padding-bottom: 5px;
    /*  border-bottom: 3px solid var(--footerBackground); */
     font-family: var(--nameFont);
+}
+
+.navbar__home__icon{
+    font-size: 35px;
+    color: var(--borderGrey);
 }
 
 .navbar__list{
@@ -58,12 +73,26 @@
 
 .home__slope__line{
     width: 110%;
-    height: 50px;
+    height: 20px;
     position: absolute;
+    padding-bottom: 20px;
     top: 29px;
     transform: rotate(3deg);
     background-color: white;
     border-bottom: 3px solid var(--footerBackground);
+}
+
+.home__slope__line--deg{
+    transform: rotate(-3deg);
+
+}
+
+/* */
+
+.reset__home{
+    position: absolute;
+    top: -30px;
+    left: 5px;
 }
 
 .home__background--image{
@@ -105,88 +134,108 @@
     cursor: pointer;
 }
 
-.portfolio{
-    position: absolute;
-    bottom: 20%;
-    left: 20%;
-    width: 70%;
-    height: 50%;
+ .container__portfolio{
+    position: relative;
+    bottom: 700px;
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+    margin: 0 auto;
     display: grid;
+}
+
+/* .container__portfolio{
+    position: relative;
+    bottom: 700px;
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(4, 1fr);
 }
 
-.portfolio__item--anim:hover{
-    transform: scale(1.1);
-}
-
-.portfolio__item--1{
+.container__portfolio__item-1{
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
+    background-color: var(--color1);
 }
-
-.portfolio__item--2{
+.container__portfolio__item-2{
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
+    background-color: var(--color2);
 }
-.portfolio__item--3{
+
+.container__portfolio__item-3{
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 3;
     grid-column-end: 4;
+    background-color: var(--color3);
 }
 
-.portfolio__item--4{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 4;
-    grid-column-end: 5;
-}
-
-.portfolio__item--5{
+.container__portfolio__item-4{
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
+    background-color: var(--color4);
 }
 
-.portfolio__item--6{
+.container__portfolio__item-5{
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
+    background-color: var(--color5);
 }
 
-.portfolio__item--7{
+.container__portfolio__item-6{
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: 4;
+    background-color: var(--color6);
 }
 
-.portfolio__item--8{
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 4;
-    grid-column-end: 5;
+.container__portfolio__item-7{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: var(--color7);
 }
 
-.responsive__img{
-    width: 100%;
-    height: auto;
+.container__portfolio__item-8{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: var(--color8);
 }
+.container__portfolio__item-9{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: var(--color9);
+} */
 
-
-
-
-
-
-
+.regen__grid{
+    position:absolute;
+    bottom: 40%;
+    left: 45%;
+    background-color: lightblue;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
 
 @media (max-width: 600px) {
     .home__footer{
