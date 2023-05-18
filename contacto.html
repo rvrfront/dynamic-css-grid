@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+ <link rel="stylesheet" href="./styles/contacto.css">   
+ <title>Practica modulo 2</title>
+</head>
+<body class="home">
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li><a class="navbar__list__item" href="./home.html">Home</a></li>
+            <li><a class="navbar__list__item" href="./trabajos.html">Trabajos</a></li>
+            <li><a class="navbar__list__item" href="./mosaico.html">Mosaico</a></li>
+            <li><a class="navbar__list__item navbar__list__item--underline" href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="home__slope__line">
+    </div>
+    <img class="home__background--image" src="./assets/home-background.jpg" alt="background-image">
+
+
+        <form class="container__form">
+            <div class="container__form__label__container">
+                <label class="container__form__label--color" for="nombre">Nombre: </label>
+            </div>
+            <input class="container__form__input" id="nombre" size="35" type="text" name="nombre" placeholder="introduzca nombre..." required/>
+            <div class="container__form__label__container">
+                <label class="container__form__label--color" for="mensaje">Mensaje</label>
+            </div>
+            <textarea class="container__form__input" name="mensaje" id="mensaje" cols="28" rows="10" placeholder="introduzca mensaje..." required></textarea>
+            <button type="submit" class="miBoton">enviar</button>
+        </form>
+
+
+    <footer class="home__footer">
+        <div>
+            <span class="symbol">&copy;</span>
+        </div>
+        <div class="container__redes__sociales">
+            <a class="redes__sociales" href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter redes__sociales__icon"></i></a>
+            <a class="redes__sociales" href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin redes__sociales__icon"></i></a>
+        </div>
+    </footer>
+    <script src="./scripts/contacto.js"></script>
+</body>
+</html>
