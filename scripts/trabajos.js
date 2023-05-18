@@ -69,11 +69,6 @@ function addChildren(rows, columns, template){
     }
 }
 
-function removeChildren(element){
-    while (element.firstChild) {
-        element.removeChild(element.lastChild);
-    }
-}
 
 function genRandomGrid(){
     let gridHtml = document.querySelector(".container__portfolio");
@@ -81,17 +76,32 @@ function genRandomGrid(){
     let columns = Math.trunc(Math.random() * 8) + 2;
     console.log('row rows: ', rows);
     console.log('row columns: ', columns);
+    console.log('children before remove childre: ', gridHtml.children);
 
 /*     if (gridHtml.children.length > 0) {
         removeChildren(gridHtml);
     } */
-    console.log('children after: ' ,gridHtml.children);
+
+    console.log('numero de hijos: ', gridHtml.children.length);
+    let counterRemovedChildren = 0;
+    while(gridHtml.firstChild) {
+        console.log('firstChild: ', gridHtml.lastChild);
+        gridHtml.removeChild(gridHtml.lastChild);
+        counterRemovedChildren += 1;
+    }
+    console.log('removedChildren: ', counterRemovedChildren);
+
+    gridHtml = document.querySelector(".container__portfolio");
+    console.log('children after removing children: ' ,gridHtml.children);
     console.log('rows: ', rows - 1);
     console.log('columns: ', columns - 1);
+    //creo de nuevo el section
+
     gridHtml = document.querySelector(".container__portfolio");
     gridHtml.style.gridTemplateRows = genTemplate(rows - 1);
     gridHtml.style.gridTemplateColumns = genTemplate(columns - 1);
     gridHtml.style.gridGap = "10px";
+    gridHtml.style.opacity = "0.7";
     let childrenCounter = 0;
     addChildren(rows - 1, columns - 1, gridHtml);
     for (let row = 1; row < rows; row++){

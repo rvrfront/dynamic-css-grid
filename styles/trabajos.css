@@ -222,10 +222,15 @@
     background-color: var(--color9);
 } */
 
-.button{
+.regen__grid{
     position:absolute;
-    bottom: 300px;
-    left: 300px;
+    bottom: 40%;
+    left: 45%;
+    background-color: lightblue;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 1.1rem;
 }
 
 @media (max-width: 600px) {
