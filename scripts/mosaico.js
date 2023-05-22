@@ -111,7 +111,7 @@ function genRandomGrid(){
             //Adds a p with the background color
             const pColorCode = document.createElement("p");
             pColorCode.style.textAlign = "center";
-            pColorCode.style.color ="white";
+            pColorCode.style.color ="black";
             const tempRandomColor = genRandomColor();
             pColorCode.textContent = tempRandomColor;
             children.appendChild(pColorCode);
