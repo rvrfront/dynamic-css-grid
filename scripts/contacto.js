@@ -1,3 +1,6 @@
+import Swal from '/dist/sweetalert2.all.min.js';
+/* import 'sweetalert2/src/sweetlaert2.scss'; */
+
 const miFormulario = document.querySelector(".container__form");
 const miBoton = document.querySelector(".miBoton");
 
@@ -32,4 +35,9 @@ miFormulario.addEventListener("submit", (e) => {
   console.log("Form submitted!");
   console.log("nombre: ", miFormulario.nombre.value);
   console.log("mensaje: ", miFormulario.mensaje.value);
+  Swal.fire({
+    title: 'Form status:',
+    text: 'Your form has just been submitted successfully!',
+    confirmButtonText: 'Cool'
+  });
 });

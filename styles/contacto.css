@@ -2,11 +2,15 @@
     --fontWhite: #ffffff;
     --borderGrey: #c5c1c1;
     --footerBackground: #252729;
+    --colorOver: #463AB5;
     --xs: 600px;
     --s: 768px;
     --l: 992px;
     --xl: 1200px;
     --spinFooter: 2deg;
+    --spinFotter--3deg: 3deg;
+    --spinFooter--2deg: 2deg;
+    --spinFooter--1deg: 1deg;
     --nameFont: 'Roboto Condensed', sans-serif;
 }
 
@@ -28,6 +32,23 @@
     font-family: var(--nameFont);
 }
 
+.navbar__home{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 10;
+}
+
+.navbar__home__icon{
+    text-decoration: none;
+    font-size: 28px;
+    color: var(--borderGrey);
+}
+
+.navbar__home__icon:hover{
+    color: var(--colorOver);
+}
+
 .navbar__list{
     display: flex;
     flex-direction: row;
@@ -46,12 +67,12 @@
 }
 
 .navbar__list__item--underline{
-    border-top: 3px solid var(--borderGrey);
+    border-top: 3px solid var(--colorOver);
 }
 
 .navbar__list__item:hover{
     transform: scale(1.1);
-    color: teal;
+    color: var(--colorOver);
     cursor: pointer;
 }
 
@@ -116,6 +137,7 @@
 }
 
 .symbol{
+    padding-left: 15px;
     font-family: var(--nameFont);
     font-weight: 700;
     color: inherit;
@@ -124,7 +146,7 @@
 .redes__sociales{
     color: inherit;
     text-decoration: none;
-    padding-right: 0px;
+    padding-right: 25px;
 }
 
 .redes__sociales__icon:hover{
@@ -132,7 +154,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .home__footer{
         bottom: 25px;
         height: 60px;
@@ -144,6 +166,43 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
+    }
+    .symbol{
+        padding-left: 0px;
+    }
+
+    .redes__sociales{
+        padding-right: 0px;
+    }
+
+    .navbar__home{
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .home__slope__line{
+        display: none;
+    }
+
+    .navbar{
+        border-bottom: 3px solid var(--footerBackground);
+    }
+
+}
+
+
+ @media(min-width: 950px){
+
+    .home__slope__line{
+        transform: rotate(var(--spinFooter--2deg));
+    }
+
+ }
+
+ @media(min-width: 1400px){
+    .home__slope__line{
+        transform: rotate(var(--spinFooter--1deg));
     }
 }
 

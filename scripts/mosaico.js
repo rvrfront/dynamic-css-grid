@@ -78,11 +78,8 @@ function genRandomGrid(){
     console.log('row columns: ', columns);
     console.log('children before remove childre: ', gridHtml.children);
 
-/*     if (gridHtml.children.length > 0) {
-        removeChildren(gridHtml);
-    } */
-
-    console.log('numero de hijos: ', gridHtml.children.length);
+    //Parte de codigo responsable de eliminar hijos anteriores
+/*     console.log('numero de hijos: ', gridHtml.children.length);
     let counterRemovedChildren = 0;
     while(gridHtml.firstChild) {
         console.log('firstChild: ', gridHtml.lastChild);
@@ -95,9 +92,10 @@ function genRandomGrid(){
     console.log('children after removing children: ' ,gridHtml.children);
     console.log('rows: ', rows - 1);
     console.log('columns: ', columns - 1);
-    //creo de nuevo el section
 
-    gridHtml = document.querySelector(".container__portfolio");
+    gridHtml = document.querySelector(".container__portfolio"); */
+
+    //
     gridHtml.style.gridTemplateRows = genTemplate(rows - 1);
     gridHtml.style.gridTemplateColumns = genTemplate(columns - 1);
     gridHtml.style.gridGap = "10px";
@@ -110,11 +108,19 @@ function genRandomGrid(){
             console.log('row: ', row);
             console.log('column: ', column);
             const children = document.querySelector(`.item-${childrenCounter}`);
+            //Adds a p with the background color
+            const pColorCode = document.createElement("p");
+            pColorCode.style.textAlign = "center";
+            pColorCode.style.color ="white";
+            const tempRandomColor = genRandomColor();
+            pColorCode.textContent = tempRandomColor;
+            children.appendChild(pColorCode);
+            //
             children.style.gridRowStart = row.toString();
             children.style.gridRowEnd = (row + 1).toString();
             children.style.gridColumnStart = column.toString();
             children.style.gridColumnEnd = (column + 1).toString();
-            gridHtml.children.item(childrenCounter).style.backgroundColor = genRandomColor();
+            gridHtml.children.item(childrenCounter).style.backgroundColor = tempRandomColor;
             console.log(gridHtml.children.item(childrenCounter).style);
             console.log(gridHtml.children);
             childrenCounter += 1;

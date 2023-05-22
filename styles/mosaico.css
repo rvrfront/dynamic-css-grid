@@ -2,6 +2,7 @@
     --fontWhite: #ffffff;
     --borderGrey: #c5c1c1;
     --footerBackground: #252729;
+    --colorOver: #463AB5;
     --xs: 600px;
     --s: 768px;
     --l: 992px;
@@ -41,10 +42,27 @@
     font-family: var(--nameFont);
 }
 
+.navbar__home{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 10;
+}
+
 .navbar__home__icon{
-    font-size: 35px;
+    text-decoration: none;
+    font-size: 28px;
     color: var(--borderGrey);
 }
+
+.navbar__home__icon:hover{
+    color: var(--colorOver);
+}
+
+/* .navbar__home__icon{
+    font-size: 35px;
+    color: var(--borderGrey);
+} */
 
 .navbar__list{
     display: flex;
@@ -64,12 +82,12 @@
 }
 
 .navbar__list__item--underline{
-    border-top: 3px solid var(--borderGrey);
+    border-top: 3px solid var(--colorOver);
 }
 
 .navbar__list__item:hover{
     transform: scale(1.1);
-    color: teal;
+    color: var(--colorOver);
     cursor: pointer;
 }
 
@@ -104,9 +122,9 @@
 
 .message__container{
     position: absolute;
-    bottom: 45%;
-    left: 30%;
-    width: 40%;
+    bottom: 76%;
+    left: 22%;
+    width: 60%;
     height: 10%;
     color: var(--fontWhite);
     font-weight: 600;
@@ -203,6 +221,18 @@
     .redes__sociales{
         padding-right: 0px;
     }
+
+    .navbar__home{
+        display: none;
+    }
+
+    .message__container{
+        bottom: 84%;
+        left: 12%;
+        width: 80%;
+        height: 10%;
+        font-size: 1.7rem;
+    }
 }
 
 
@@ -226,7 +256,7 @@
 
  }
 
- @media(min-width: 1500px){
+ @media(min-width: 1400px){
     .home__slope__line{
         transform: rotate(var(--spinFooter--1deg));
     }
