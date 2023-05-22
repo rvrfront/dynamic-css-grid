@@ -227,24 +227,7 @@
     }
 
 
-    .container__portfolio{
-        position: absolute;
-        bottom: 10%;
-        left: 30%;
-        width:55%;
-        height: 70%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: no-wrap;
-        justify-content: start;
-        overflow-y: scroll;
-    }
 
-    article{
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 15px;
-    }
 
 }
 
@@ -265,6 +248,24 @@
 
     .navbar{
         border-bottom: 3px solid var(--footerBackground);
+    }
+    .container__portfolio{
+        position: absolute;
+        bottom: 10%;
+        left: 30%;
+        width:55%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: no-wrap;
+        justify-content: start;
+        overflow-y: scroll;
+    }
+
+    article{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 15px;
     }
 
 }
