@@ -1,5 +1,4 @@
-import Swal from '/dist/sweetalert2.all.min.js';
-/* import 'sweetalert2/src/sweetlaert2.scss'; */
+
 
 const miFormulario = document.querySelector(".container__form");
 const miBoton = document.querySelector(".miBoton");
