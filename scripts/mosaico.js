@@ -65,6 +65,7 @@ function genTemplate(value){
 
 //Funcion que crea tantos hijos (articles) en el nodo padre (section)
 //como casillas tenga la plantilla previamente creada de grid
+//añadiendo a cada hijo una clase personlalizada
 function addChildren(rows, columns, template){
     const total = rows * columns;
     let counter = 0;
