@@ -1,3 +1,4 @@
+//Funcion para pasar de codigo decimal a hexadecimal
 function parseHex(val) {
     switch (val) {
         case 0:
@@ -38,6 +39,8 @@ function parseHex(val) {
     }
 }
 
+//Funcion que genera codigos hexadecimales aleatorios para usarlos como
+//codigos de color
 function genRandomColor() {
     const color = ["#"];
     for (let i = 1; i <= 6; i++) {
@@ -50,6 +53,8 @@ function genRandomColor() {
     return result;
 }
 
+//Funcion que genera una cadena de texto plantilla
+//formato para gridTemplateRow o gridTemplateColumn
 function genTemplate(value){
     const result = [];
     for (let i = 1; i <= value; i++){
@@ -58,6 +63,8 @@ function genTemplate(value){
     return result.join(",");
 }
 
+//Funcion que crea tantos hijos (articles) en el nodo padre (section)
+//como casillas tenga la plantilla previamente creada de grid
 function addChildren(rows, columns, template){
     const total = rows * columns;
     let counter = 0;
@@ -69,7 +76,7 @@ function addChildren(rows, columns, template){
     }
 }
 
-
+//Funcion que añade el grid al DOM de su html
 function genRandomGrid(){
     let gridHtml = document.querySelector(".container__portfolio");
     let rows = Math.trunc(Math.random() * 9) + 3;
@@ -78,24 +85,6 @@ function genRandomGrid(){
     console.log('row columns: ', columns);
     console.log('children before remove childre: ', gridHtml.children);
 
-    //Parte de codigo responsable de eliminar hijos anteriores
-/*     console.log('numero de hijos: ', gridHtml.children.length);
-    let counterRemovedChildren = 0;
-    while(gridHtml.firstChild) {
-        console.log('firstChild: ', gridHtml.lastChild);
-        gridHtml.removeChild(gridHtml.lastChild);
-        counterRemovedChildren += 1;
-    }
-    console.log('removedChildren: ', counterRemovedChildren);
-
-    gridHtml = document.querySelector(".container__portfolio");
-    console.log('children after removing children: ' ,gridHtml.children);
-    console.log('rows: ', rows - 1);
-    console.log('columns: ', columns - 1);
-
-    gridHtml = document.querySelector(".container__portfolio"); */
-
-    //
     gridHtml.style.gridTemplateRows = genTemplate(rows - 1);
     gridHtml.style.gridTemplateColumns = genTemplate(columns - 1);
     gridHtml.style.gridGap = "10px";
@@ -131,5 +120,4 @@ function genRandomGrid(){
 
 
 document.addEventListener("DOMContentLoaded", genRandomGrid);
-genRandomColor();
-genTemplate(5);
+

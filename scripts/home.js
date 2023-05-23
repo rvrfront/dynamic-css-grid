@@ -1,15 +1,5 @@
 console.log('Hola desde consola');
 
-function factorial(){
-    var input = window.prompt('introduce numero');
-    console.log(typeof input);
-    var result = 1;
-    for (var i = 1; i <= input; i++){
-        result = result * i;
-    }
-    console.log('El factorial es: ', result);
-}
-
 function carrousel() {
     const images = ["back1.jpg", "back2.jpg", "back3.jpg", "back4.jpg", "back5.jpg"];
     const background = document.querySelector(".home__background--image");
@@ -36,4 +26,3 @@ function carrousel() {
 
 }
 document.addEventListener("DOMContentLoaded", carrousel);
-/* document.addEventListener("DOMContentLoaded", factorial); */

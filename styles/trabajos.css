@@ -17,8 +17,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 .home{
-/*     width: var(--s);
-    max-width: var(--s); */
+
     overflow: hidden;
     margin: 0px;
 
@@ -28,7 +27,6 @@
     width: 100%;
     height: 1.5rem;
     padding-bottom: 12px;
-   /*  border-bottom: 3px solid var(--footerBackground); */
     font-family: var(--nameFont);
 }
 
@@ -141,7 +139,6 @@
 
 .portfolio__item--anim:hover{
 
-   /*  transform: scale(1.1); */
     animation-name: wooble;
     animation-duration: 1s;
 }
@@ -346,13 +343,3 @@
      }
  }
 
-
-
-
-
-
-
-
-
-
-/*Patron de estilos siguiendo el patron mobile first */

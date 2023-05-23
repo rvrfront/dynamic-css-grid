@@ -1,5 +1,3 @@
-
-
 const miFormulario = document.querySelector(".container__form");
 const miBoton = document.querySelector(".miBoton");
 
