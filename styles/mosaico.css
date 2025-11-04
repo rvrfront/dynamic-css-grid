@@ -11,12 +11,12 @@
     --spinFooter--2deg: 2deg;
     --spinFooter--1deg: 1deg;
     --spinFooter: 2deg;
-    --nameFont: 'Roboto Condensed', sans-serif;
+
 
     
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
 
 .home{
 
@@ -29,7 +29,7 @@
     width: 100%;
     height: 1.5rem;
     padding-bottom: 12px;
-    font-family: var(--nameFont);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar__home{
@@ -114,7 +114,7 @@
     color: var(--fontWhite);
     font-weight: 600;
     font-size: 2rem;
-    font-family: var(--nameFont);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .home__footer{
@@ -134,7 +134,7 @@
 }
 
 .symbol{
-    font-family: var(--nameFont);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     color: inherit;
     padding-left: 15px;
